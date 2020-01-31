@@ -198,7 +198,6 @@ $bgheader: #fff;
       }*/
       .hvr-underline-from-center {
         display: inline-block;
-        vertical-align: middle;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -228,7 +227,7 @@ $bgheader: #fff;
       .contact{
         @include flex-col-cen-cen;
         .phone-number-header-container{
-          @-webkit-keyframes hvr-buzz-out {
+          /*@-webkit-keyframes hvr-buzz-out {
             10% {
               -webkit-transform: translateX(3px) rotate(2deg);
               transform: translateX(3px) rotate(2deg);
@@ -328,14 +327,23 @@ $bgheader: #fff;
               animation-timing-function: linear;
               -webkit-animation-iteration-count: 1;
               animation-iteration-count: 1;
-            }
+            }*/
         }
         p {
           padding: 0;
           margin: 0;
         }
         .mail-header-container {
-          @-webkit-keyframes hvr-pulse-grow {
+          .hvr-pulse-grow{
+
+          }
+          .hvr-pulse-grow:hover {
+            text-decoration: none;
+            font-weight: bold;
+            transition: 1.2s;
+            transform: scale(1.1);
+          }
+          /*@-webkit-keyframes hvr-pulse-grow {
             to {
               -webkit-transform: scale(1.1);
               transform: scale(1.1);
@@ -349,7 +357,6 @@ $bgheader: #fff;
           }
           .hvr-pulse-grow {
             display: inline-block;
-            vertical-align: middle;
             -webkit-transform: perspective(1px) translateZ(0);
             transform: perspective(1px) translateZ(0);
             box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -365,7 +372,7 @@ $bgheader: #fff;
             animation-iteration-count: infinite;
             -webkit-animation-direction: alternate;
             animation-direction: alternate;
-          }
+          }*/
         }
       }
     }
@@ -385,9 +392,22 @@ $bgheader: #fff;
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
-        .carousel-item img {
-          max-height: 700px;
-          height: auto;
+        .carousel-item{
+          .carousel-caption{
+            top:35%;
+            bottom: 35%;
+            background: rgba(255, 255, 255, 0.75);
+            padding: 5px;
+            p{
+              margin: 50px 0 0 0;
+              font-size: 40px;
+              color: black;
+            }
+          }
+          img {
+            max-height: 600px;
+            height: auto;
+          }
         }
       }
     }
