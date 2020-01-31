@@ -1,0 +1,57 @@
+$blue: #0096d8;
+$aquamarine: #28a6bf;
+
+.container-fluid {
+  max-width: 100%;
+  min-width: 315px;
+  height: auto;
+  header{
+    .navigation-wrapper-container{
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      border-top: 3px solid $blue;
+      background: #fff;
+      border-bottom: 1px solid $aquamarine;
+      padding: 20px;
+      .link-img-home-page{
+
+      }
+      .navigation-wrapper{
+      }
+      .phonenumber{
+
+      }
+    }
+  }
+  main{}
+  footer{}
+}
+
+// Большие девайсы (большие десктопы, < 1200px)
+@media (max-width: 1199.98px) {}
+// Средние девайсы («таблетки», < 992px)
+@media (max-width: 991.98px) {}
+// Малые девайсы («ландшафтные», < 768px)
+@media (max-width: 767.98px) {
+  .container-fluid{
+    header{
+      .navigation-wrapper-container{
+        flex-direction: column;
+        .navigation-wrapper{
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+
+}
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px) {}
