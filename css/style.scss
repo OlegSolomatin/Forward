@@ -1,6 +1,13 @@
 $blue: #0096d8;
 $aquamarine: #28a6bf;
 $bgheader: #fff;
+@mixin fonttitle{
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+  font-size: 35px;
+}
 @mixin fontourserviceP {
   font-weight: 400;
   color: black;
@@ -13,6 +20,12 @@ $bgheader: #fff;
   color: $blue;
   font-size: 25px;
   text-align: center;
+}
+@mixin fonttitledoc{
+  color: $blue;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
 }
 @mixin flex-col-cen{
   display: -webkit-box;
@@ -91,16 +104,25 @@ $bgheader: #fff;
   main{
     position: absolute;
     margin-top: 114px;
+    width: 100%;
+
     .corousel_container {
       width: 100%;
+      max-width: 1920px;
+      margin: 0 auto;
     }
     .our-services-container{
       @include flex-col-cen-cen;
-      max-width: 1200px;
+      max-width: 1920px;
       width: 100%;
       margin: 0 auto;
+      .our-service-title{
+        margin: 35px 0;
+        @include fonttitle;
+      }
       .our-service{
         margin: 25px 0;
+        max-width: 1200px;
         .views-field-field-service-icon{
           width: 100px;
           height: 100px;
@@ -137,6 +159,44 @@ $bgheader: #fff;
         background-image: url("../img/business-hero1_0.jpg");
         background-repeat: no-repeat;
         background-position: top;
+      }
+    }
+    .company-info {
+      width: 100%;
+      max-width: 1920px;
+      background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../img/us.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      padding: 100px 25px;
+      margin: 0 auto;
+      text-align: center;
+      color: $bgheader;
+      p{
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+    .documents-container{
+      @include flex-row-cen;
+      justify-content: space-evenly;
+      figure{
+        width: 350px;
+        height: 281px;
+        @include flex-col-cen-cen;
+        margin: 15px 0;
+        a{
+          img{
+            width: 125px;
+            height: 190px;
+            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+          }
+        }
+        .title-docks {
+          margin: 15px 0 0 0;
+          @include fonttitledoc;
+        }
       }
     }
   }
