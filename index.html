@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Форвард: финансовая компания</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/7e4d23cf7d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body>
 <div class="container-fluid">
-    <header>
+    <header id="header">
         <section class="navigation-wrapper-container">
             <a href="#" id="logo" rel="home" title="На главную страницу сайта. Форвард: финансовая компания" class="link-img-home-page">
                 <img src="img/logo.png">
@@ -17,25 +19,35 @@
             <div class="navigation-wrapper">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
+                        <a class="nav-link" href="#info" role="button" aria-haspopup="true" aria-expanded="false" >О Компании</a>
+                    </li>
+                    <img src="img/favicon.png">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#u1">ПОКУПКА ЗАДОЛЖЕННОСТИ ПО КРЕДИТАМ ФИЗИЧЕСКИХ И ЮРИДИЧЕСКИХ ЛИЦ</a>
+                            <a class="dropdown-item" href="#u2">ВЗЫСКАНИЕ ЗАДОЛЖЕННОСТИ ПО АГЕНТСКОЙ СХЕМЕ</a>
+                            <a class="dropdown-item" href="#u3">ДОСУДЕБНОЕ ВЗЫСКАНИЕ</a>
+                            <a class="dropdown-item" href="#u4">CУДЕБНОЕ ВЗЫСКАНИЕ</a>
+                        </div>
                     </li>
                     <img src="img/favicon.png">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" data-toggle="pill" role="button" aria-haspopup="true" aria-expanded="false" href="#">Контакты</a>
                     </li>
                     <img src="img/favicon.png">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" data-toggle="pill" role="button" aria-haspopup="true" aria-expanded="false" href="#">Обратная Связь</a>
                     </li>
                 </ul>
             </div>
             <div class="contact">
-                <a href="tel:+7 (999) 999-0-999">+7 (999) 999-0-999</a>
-                <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+                <a href="tel:+7 (804) 333-41-33" target="_blank">+7&nbsp;(804)&nbsp;333-41-33</a>
+                <a href="mailto:info@caforward.ru" target="_blank">info@caforward.ru</a>
             </div>
         </section>
     </header>
-    <main>
+    <main id="main">
         <section class="corousel_container">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -172,11 +184,15 @@
         </section>-->
         <div class="container-map-contact">
             <section class="block-contact">
-                <h2>ООО "Форвард"</h2>
-                <span>тел: <a href="tel:+7 (999) 999-0-999" target="_blank">+7 (999) 999-0-999</a></span>
-                <span>email: <a href="mailto:mail@mail.ru" target="_blank">mail@mail.ru</a></span>
-                <span>Юридический и фактический адрес: <br><a href="https://goo.gl/maps/4e5JXHUpfD8G1Sju7" target="_blank">630007, г. Новосибирск, ул. Советская, д.5</a> </span>
-                <span>ОГРН&nbsp;1145476156055 <br>ИНН&nbsp;5406796664 <br>КПП&nbsp;540701001</span>
+                <h2>ООО&nbsp;"Форвард"</h2>
+                <span class="phone_number-container"><i class="fas fa-mobile-alt"></i> <a href="tel:+7 (804) 333-41-33" target="_blank"> +7 (804) 333-41-33</a></span>
+                <span class="mail-container"><i class="far fa-envelope"></i> <a href="mailto:info@caforward.ru" target="_blank"> info@caforward.ru</a></span>
+                <span class="map-container"><i class="fas fa-map-marked-alt"></i><a href="https://goo.gl/maps/4e5JXHUpfD8G1Sju7" target="_blank">Юридический&nbsp;и&nbsp;фактический&nbsp;адрес:<br> 630007, Новосибирская&nbsp;область, г.&nbsp;Новосибирск, ул.&nbsp;Максима&nbsp;Горького, д.&nbsp;51, этаж&nbsp;2, пом.&nbsp;8, 9, 9/1, 10</a></span>
+                <span class="legal-data-container">
+                    <a href="documents/ogrn.pdf" target="_blank">ОГРН&nbsp;1145476156055</a><br>
+                    <a href="https://www.list-org.com/company/2439165" target="_blank">ИНН&nbsp;5406796664</a><br>
+                    <a href="https://www.list-org.com/company/2439165" target="_blank">КПП&nbsp;540701001</a>
+                </span>
             </section>
             <section class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.9326284719145!2d82.91237231603884!3d55.02687305520974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5d3be0db6fd%3A0x371afdd7b0a772d5!2z0YPQuy4g0JzQsNC60YHQuNC80LAg0JPQvtGA0YzQutC-0LPQviwgNTEsINCd0L7QstC-0YHQuNCx0LjRgNGB0LosINCd0L7QstC-0YHQuNCx0LjRgNGB0LrQsNGPINC-0LHQuy4sIDYzMDA5OQ!5e0!3m2!1sru!2sru!4v1580468593046!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
