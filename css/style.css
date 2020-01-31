@@ -2,6 +2,7 @@ a {
   text-decoration: none;
   color: black; }
 
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 .container-fluid {
   max-width: 100%;
   min-width: 315px;
@@ -13,7 +14,8 @@ a {
     width: 100%;
     height: auto;
     position: fixed;
-    z-index: 10; }
+    z-index: 10;
+    top: 0; }
     .container-fluid header .navigation-wrapper-container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -25,12 +27,16 @@ a {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
       justify-content: space-evenly;
       border-top: 3px solid #0096d8;
       background: #fff;
       border-bottom: 1px solid #28a6bf;
       padding: 20px; }
       .container-fluid header .navigation-wrapper-container .navigation-wrapper .justify-content-center {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center; }
         .container-fluid header .navigation-wrapper-container .navigation-wrapper .justify-content-center img {
           width: 15px;
@@ -50,7 +56,6 @@ a {
         -ms-flex-pack: center;
         justify-content: center; }
   .container-fluid main {
-    position: absolute;
     margin-top: 114px;
     width: 100%; }
     .container-fluid main section {
@@ -154,6 +159,8 @@ a {
     .container-fluid main .company-info {
       width: 100%;
       max-width: 1920px;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/us.jpg");
+      background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/us.jpg");
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/us.jpg");
       background-size: cover;
       background-repeat: no-repeat;
@@ -191,11 +198,15 @@ a {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
         max-width: 1200px;
         width: 100%; }
         .container-fluid main .documents-container .documents-content figure {
           width: 33%;
+          height: -webkit-max-content;
+          height: -moz-max-content;
           height: max-content;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -209,11 +220,16 @@ a {
           align-items: center;
           margin: 15px 0; }
           .container-fluid main .documents-container .documents-content figure a :hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
             transform: scale(1.1);
+            -webkit-transition: 1.2s;
+            -o-transition: 1.2s;
             transition: 1.2s; }
           .container-fluid main .documents-container .documents-content figure a img {
             width: 125px;
             height: 190px;
+            -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); }
           .container-fluid main .documents-container .documents-content figure .title-docks {
             margin: 0 0 0 20px;
@@ -222,11 +238,8 @@ a {
             text-align: center;
             font-weight: 400; }
   .container-fluid footer {
-    position: absolute;
-    margin: 2584px 0 0 0;
     width: 100%;
     background: #186689;
-    padding: 50px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -251,12 +264,16 @@ a {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       padding: 15px; }
       .container-fluid footer .navigation-wrapper-container .link-img-home-page img {
         width: 286px;
         height: 70px; }
       .container-fluid footer .navigation-wrapper-container .navigation-wrapper .justify-content-center {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center; }
         .container-fluid footer .navigation-wrapper-container .navigation-wrapper .justify-content-center img {
           width: 15px;
@@ -292,8 +309,10 @@ a {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
       justify-content: space-evenly;
-      padding: 0 0 25px 0; }
+      padding: 50px 0 25px 0; }
       .container-fluid footer .container-map-contact .block-contact {
         color: white;
         display: -webkit-box;
@@ -392,6 +411,22 @@ a {
         -ms-flex-align: center;
         align-items: center; }
         .container-fluid main .documents-container .documents-content figure .title-docks {
-          margin: 15px 0; } }
+          margin: 15px 0; }
+  .container-fluid footer .container-map-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .container-fluid footer .container-map-contact .block-contact, .container-fluid footer .container-map-contact .map {
+      width: 80%; } }
 
 /*# sourceMappingURL=style.css.map */

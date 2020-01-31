@@ -99,6 +99,8 @@ $bgheader: #fff;
   -ms-flex-pack: center;
   justify-content: center;
 }
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .container-fluid {
   max-width: 100%;
   min-width: 315px;
@@ -111,8 +113,11 @@ $bgheader: #fff;
     height: auto;
     position: fixed;
     z-index: 10;
+    top: 0;
     .navigation-wrapper-container{
       @include flex-row-cen;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
       justify-content: space-evenly;
       border-top: 3px solid $blue;
       background: $bgheader;
@@ -122,6 +127,8 @@ $bgheader: #fff;
       }
       .navigation-wrapper{
         .justify-content-center {
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
           img {
             width: 15px;
@@ -135,7 +142,6 @@ $bgheader: #fff;
     }
   }
   main{
-    position: absolute;
     margin-top: 114px;
     width: 100%;
     section{
@@ -210,6 +216,8 @@ $bgheader: #fff;
     .company-info {
       width: 100%;
       max-width: 1920px;
+      background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)) ), url("../img/us.jpg");
+      background-image: -o-linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../img/us.jpg");
       background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../img/us.jpg");
       background-size: cover;
       background-repeat: no-repeat;
@@ -228,22 +236,31 @@ $bgheader: #fff;
       @include flex-col-cen-cen;
       .documents-content {
         @include flex-row-cen;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
         max-width: 1200px;
         width: 100%;
         figure {
           width: 33%;
+          height: -webkit-max-content;
+          height: -moz-max-content;
           height: max-content;
           @include flex-row-cen;
           margin: 15px 0;
           a {
             :hover{
+              -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
               transform: scale(1.1);
+              -webkit-transition: 1.2s;
+              -o-transition: 1.2s;
               transition: 1.2s;
             }
             img {
               width: 125px;
               height: 190px;
+              -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
               box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
             }
           }
@@ -256,14 +273,13 @@ $bgheader: #fff;
     }
   }
   footer{
-    position: absolute;
-    margin: 2584px 0 0 0;
     width: 100%;
     background: $foterbg;
-    padding: 50px 0 0 0;
     @include flex-col-cen-cen;
     .navigation-wrapper-container{
       @include flex-row-cen;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       padding: 15px;
       .link-img-home-page{
@@ -274,14 +290,16 @@ $bgheader: #fff;
       }
       .navigation-wrapper{
         .justify-content-center {
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
           img {
             width: 15px;
             height: 15px;
           }
           a{
-             color: white;
-           }
+            color: white;
+          }
         }
       }
       .contact{
@@ -295,8 +313,10 @@ $bgheader: #fff;
       max-width: 1200px;
       width: 100%;
       @include flex-row-cen;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
       justify-content: space-evenly;
-      padding: 0 0 25px 0;
+      padding: 50px 0 25px 0;
       .block-contact{
         color: white;
         @include flex-col-cen-cen;
@@ -356,6 +376,8 @@ $bgheader: #fff;
         }
       }
     }
+    footer{
+    }
   }
 }
 // Экстрамалые девайсы («телефоны», < 576px)
@@ -378,6 +400,14 @@ $bgheader: #fff;
             }
           }
         }
+      }
+    }
+    footer {
+      .container-map-contact{
+        .block-contact, .map {
+          width: 80%;
+        }
+        @include flex-col-cen-cen;
       }
     }
   }
