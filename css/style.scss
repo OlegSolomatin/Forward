@@ -1,5 +1,11 @@
+a {
+  text-decoration: none;
+  color: black;
+
+}
 $blue: #0096d8;
 $aquamarine: #28a6bf;
+$foterbg: #186689;
 $bgheader: #fff;
 @mixin fonttitle{
   text-transform: uppercase;
@@ -26,6 +32,18 @@ $bgheader: #fff;
   font-size: 16px;
   text-align: center;
   font-weight: 400;
+}
+@mixin flex-col-justcent{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 @mixin flex-col-cen{
   display: -webkit-box;
@@ -66,6 +84,21 @@ $bgheader: #fff;
   -ms-flex-align: center;
   align-items: center;
 }
+@mixin flex-row-cen-cen{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 .container-fluid {
   max-width: 100%;
   min-width: 315px;
@@ -105,11 +138,24 @@ $bgheader: #fff;
     position: absolute;
     margin-top: 114px;
     width: 100%;
+    section{
+      max-width: 1920px;
+      margin: 0 auto;
+    }
 
     .corousel_container {
       width: 100%;
       max-width: 1920px;
       margin: 0 auto;
+      .carousel {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        .carousel-item img {
+          max-height: 500px;
+          height: auto;
+        }
+      }
     }
     .our-services-container{
       @include flex-col-cen-cen;
@@ -179,28 +225,107 @@ $bgheader: #fff;
       }
     }
     .documents-container{
-      @include flex-row-cen;
-      justify-content: space-evenly;
-      figure{
-        width: 350px;
-        height: 281px;
-        @include flex-col-cen-cen;
-        margin: 15px 0;
-        a{
-          img{
-            width: 125px;
-            height: 190px;
-            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+      @include flex-col-cen-cen;
+      .documents-content {
+        @include flex-row-cen;
+        justify-content: space-evenly;
+        max-width: 1200px;
+        width: 100%;
+        figure {
+          width: 33%;
+          height: max-content;
+          @include flex-row-cen;
+          margin: 15px 0;
+          a {
+            :hover{
+              transform: scale(1.1);
+              transition: 1.2s;
+            }
+            img {
+              width: 125px;
+              height: 190px;
+              box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+            }
           }
-        }
-        .title-docks {
-          margin: 15px 0 0 0;
-          @include fonttitledoc;
+          .title-docks {
+            margin: 0 0 0 20px;
+            @include fonttitledoc;
+          }
         }
       }
     }
   }
-  footer{}
+  footer{
+    position: absolute;
+    margin: 2584px 0 0 0;
+    width: 100%;
+    background: $foterbg;
+    padding: 50px 0 0 0;
+    @include flex-col-cen-cen;
+    .navigation-wrapper-container{
+      @include flex-row-cen;
+      justify-content: space-between;
+      padding: 15px;
+      .link-img-home-page{
+        img{
+          width: 286px;
+          height: 70px;
+        }
+      }
+      .navigation-wrapper{
+        .justify-content-center {
+          align-items: center;
+          img {
+            width: 15px;
+            height: 15px;
+          }
+          a{
+             color: white;
+           }
+        }
+      }
+      .contact{
+        @include flex-col-cen-cen;
+        a{
+          color: white;
+        }
+      }
+    }
+    .container-map-contact{
+      max-width: 1200px;
+      width: 100%;
+      @include flex-row-cen;
+      justify-content: space-evenly;
+      padding: 0 0 25px 0;
+      .block-contact{
+        color: white;
+        @include flex-col-cen-cen;
+        width: 33%;
+        height: auto;
+        text-align: center;
+        a{
+          color: white;
+        }
+      }
+      .map{
+        width: 33%;
+      }
+    }
+    .copyright{
+      width: 100%;
+      @include flex-col-cen-cen;
+      background: #124f6b;
+      color: #a0aab0;
+      padding: 25px 0 10px 0;
+      p{
+        margin: 0;
+        a{
+          color: white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 // Большие девайсы (большие десктопы, < 1200px)
@@ -221,7 +346,14 @@ $bgheader: #fff;
     }
     main {
       margin: 0;
-      .corousel_container{
+      .documents-container{
+        .documents-content {
+          figure {
+            width: 50%;
+            @include flex-row-cen;
+            margin: 15px;
+          }
+        }
       }
     }
   }
@@ -232,8 +364,21 @@ $bgheader: #fff;
     header{
       position: inherit;
     }
-    main{
+    main {
       margin: 0;
+      .documents-container{
+        .documents-content {
+          @include flex-col-cen;
+          figure {
+            width: 100%;
+            margin: 15px 0;
+            @include flex-col-cen;
+            .title-docks{
+              margin: 15px 0;
+            }
+          }
+        }
+      }
     }
   }
 }
