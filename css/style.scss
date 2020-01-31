@@ -1,6 +1,19 @@
 $blue: #0096d8;
 $aquamarine: #28a6bf;
-$bgheader: #ececec;
+$bgheader: #fff;
+@mixin fontourserviceP {
+  font-weight: 400;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+@mixin fontourserviceH2 {
+  font-weight: 400;
+  color: $blue;
+  font-size: 25px;
+  text-align: center;
+}
 @mixin flex-col-cen{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,6 +64,7 @@ $bgheader: #ececec;
     width: 100%;
     height: auto;
     position: fixed;
+    z-index: 10;
     .navigation-wrapper-container{
       @include flex-row-cen;
       justify-content: space-evenly;
@@ -75,10 +89,55 @@ $bgheader: #ececec;
     }
   }
   main{
+    position: absolute;
+    margin-top: 114px;
     .corousel_container {
       width: 100%;
-      position: absolute;
-      margin-top: 114px;
+    }
+    .our-services-container{
+      @include flex-col-cen-cen;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      .our-service{
+        margin: 25px 0;
+        .views-field-field-service-icon{
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+          @include flex-col-cen-cen;
+          background: white;
+          margin-top: -46px;
+        }
+        @include flex-col-cen;
+        h2{
+          @include fontourserviceH2;
+          margin: 140px 0 10px 0;
+        }
+        p{
+          @include fontourserviceP;
+        }
+      }
+      .our-service-1{
+        background-image: url("../img/business-hero1_0.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+      .our-service-2{
+        background-image: url("../img/business-hero1_0.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+      .our-service-3{
+        background-image: url("../img/business-hero1_0.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+      .our-service-4{
+        background-image: url("../img/business-hero1_0.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+      }
     }
   }
   footer{}
@@ -92,6 +151,7 @@ $bgheader: #ececec;
 @media (max-width: 767.98px) {
   .container-fluid{
     header{
+      position: inherit;
       .navigation-wrapper-container{
         flex-direction: column;
         .navigation-wrapper{
@@ -100,8 +160,8 @@ $bgheader: #ececec;
       }
     }
     main {
+      margin: 0;
       .corousel_container{
-        margin-top: 232px;
       }
     }
   }
@@ -110,7 +170,10 @@ $bgheader: #ececec;
 @media (max-width: 575.98px) {
   .container-fluid{
     header{
-      position: absolute;
+      position: inherit;
+    }
+    main{
+      margin: 0;
     }
   }
 }
