@@ -3,7 +3,6 @@ a {
   text-decoration: none;
   color: black; }
 
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 .container-fluid {
   max-width: 100%;
   min-width: 315px;
@@ -14,8 +13,6 @@ a {
     max-width: 100%;
     width: 100%;
     height: auto;
-    position: fixed;
-    z-index: 11;
     top: 0; }
     .container-fluid header .navigation-wrapper-container {
       display: -webkit-box;
@@ -131,7 +128,6 @@ a {
           text-decoration: none;
           color: black; }
   .container-fluid main {
-    margin: 115px 0 0 0;
     width: 100%; }
     .container-fluid main section {
       max-width: 1920px;
@@ -343,6 +339,9 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    .container-fluid footer .invisible-link {
+      text-decoration: none;
+      color: transparent; }
     .container-fluid footer .links-footer {
       max-width: 1200px;
       width: 100%;
@@ -442,6 +441,32 @@ a {
         .container-fluid footer .copyright p a {
           color: white;
           text-decoration: underline; }
+
+.toTop {
+  width: 50px;
+  height: 50px;
+  background: #828282;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 25px;
+  /* отступ кнопки от нижнего края страницы*/
+  right: 25px;
+  cursor: pointer;
+  display: none;
+  color: #333;
+  font-family: verdana;
+  font-size: 11px; }
+  .toTop i {
+    color: white;
+    font-size: 35px; }
+
+.toTop:hover {
+  transform: scale(0.9);
+  transition: .5s; }
+  .toTop:hover i {
+    transition: .5s;
+    color: #0096d8; }
 
 @media (max-width: 1199.98px) {
   .container-fluid header .adaptive-grid-container {

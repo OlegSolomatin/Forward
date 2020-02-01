@@ -153,8 +153,6 @@ $bgheader: #fff;
   }
 }
 
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 .container-fluid {
   max-width: 100%;
   min-width: 315px;
@@ -165,8 +163,6 @@ $bgheader: #fff;
     max-width: 100%;
     width: 100%;
     height: auto;
-    position: fixed;
-    z-index: 11;
     top: 0;
     .navigation-wrapper-container{
       @include flex-row-cen;
@@ -248,7 +244,6 @@ $bgheader: #fff;
     }
   }
   main{
-    margin: 115px 0 0 0;
     width: 100%;
     section{
       max-width: 1920px;
@@ -345,7 +340,7 @@ $bgheader: #fff;
       text-align: center;
       color: $bgheader;
       h2 {
-        text-transform: uppercase;
+          text-transform: uppercase;
       }
       p{
         max-width: 1200px;
@@ -402,6 +397,10 @@ $bgheader: #fff;
     width: 100%;
     background: $foterbg;
     @include flex-col-cen-cen;
+    .invisible-link{
+      text-decoration: none;
+      color: transparent;
+    }
     .links-footer {
       max-width: 1200px;
       width: 100%;
@@ -461,6 +460,35 @@ $bgheader: #fff;
         }
       }
     }
+  }
+}
+
+//Стрелка на верх
+.toTop {
+  width: 50px;
+  height: 50px;
+  background:#828282;
+  text-align:center;
+  padding:5px;
+  position:fixed;
+  bottom: 25px; /* отступ кнопки от нижнего края страницы*/
+  right:25px;
+  cursor:pointer;
+  display:none;
+  color:#333;
+  font-family:verdana;
+  font-size:11px;
+  i{
+    color: white;
+    font-size: 35px;
+  }
+}
+.toTop:hover{
+  transform: scale(.9);
+  transition: .5s;
+  i{
+    transition: .5s;
+    color: $blue;
   }
 }
 

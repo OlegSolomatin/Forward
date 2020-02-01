@@ -17,34 +17,34 @@
     <header id="header">
         <section class="navigation-wrapper-container adaptive-grid-container">
             <div class="container-link-img-home-page adaptive-container-link-img-home-page">
-                <a href="#" id="logo" rel="home" title="На главную страницу сайта. Форвард: финансовая компания" class="link-img-home-page">
-                    <img src="img/logo.png">
+                <a href="index.php" id="logo" rel="home" title="На главную страницу сайта. Форвард: Финансовая Компания" class="link-img-home-page">
+                    <img src="img/logo.png" alt="Форвард: Финансовая Компания">
                 </a>
             </div>
-            <nav class="nav-header adaptive-nav-header">
+            <nav id="nav-header" class="nav-header adaptive-nav-header">
                 <ul>
                     <li>
-                        <a href="#" class="hvr-underline-from-center">Главная</a>
+                        <a href="index.php" class="hvr-underline-from-center">Главная</a>
                     </li>
                     <li>
-                        <a href="#" class="hvr-underline-from-center">Услуги</a>
+                        <a href="#our-service" class="hvr-underline-from-center">Услуги</a>
                     </li>
                     <li>
-                        <a href="#" class="hvr-underline-from-center">О&nbsp;компании</a>
+                        <a href="#link-company" class="hvr-underline-from-center">О&nbsp;компании</a>
                     </li>
                     <li>
-                        <a href="#" class="hvr-underline-from-center">Вопросы&nbsp;и&nbsp;ответы</a>
+                        <a href="#link-questions-and-answers" class="hvr-underline-from-center">Вопросы&nbsp;и&nbsp;ответы</a>
                     </li>
                     <li>
-                        <a href="#" class="hvr-underline-from-center">Контакты</a>
+                        <a href="#contacts" class="hvr-underline-from-center">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <div class="container-main-btn adaptive-container-main-btn">
-                <a type="button" class="btn btn-danger btn-lg main-btn" href="#modal">Связаться с&nbsp;нами</a>
+                <a class="btn btn-danger btn-lg main-btn" href="#modal">Связаться с&nbsp;нами</a>
             </div>
             <div class="contact adaptive-contact">
-                <span class="phone-number-header-container"><a href="tel:+7 (804) 333-41-33" target="_blank" class="hvr-buzz-out"><i class="fas fa-mobile-alt"></i> +7&nbsp;(804)&nbsp;333&#8209;41&#8209;33</a></span>
+                <span class="phone-number-header-container"><a href="tel:+7(804)333-41-33" target="_blank" class="hvr-buzz-out"><i class="fas fa-mobile-alt"></i> +7&nbsp;(804)&nbsp;333&#8209;41&#8209;33</a></span>
                 <p>Звонок бесплатный</p>
                 <span class="mail-header-container"><a href="mailto:info@caforward.ru" target="_blank" class="hvr-pulse-grow"><i class="far fa-envelope"></i> info@caforward.ru</a></span>
             </div>
@@ -52,14 +52,14 @@
         <!-- MODAL WINDOWS -->
         <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
             <div class="remodalBorder">
-                <p><img src="img/footer-logo-white.png"></p>
+                <p><img src="img/footer-logo-white.png" alt="Форвард: Финансовая Компания"></p>
                 <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
                 <form id="form">
                     <h2 id="modal1Title">Оставьте ваши контактные данные и наша служба поддержки свяжется с вами</h2>
                     <input type="text" class="putName" name="name" placeholder="Ваше ФИО" required>
                     <input id="phone" name="phone" type="tel" class="putPhone" placeholder="Ваш телефон" required>
                     <input name="mail" type="email" class="mail" placeholder="Ваш Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
-                    <textarea name="textarea" type="text" class="textarea" placeholder="Ваш вопрос" required></textarea>
+                    <textarea name="textarea"  class="textarea" placeholder="Ваш вопрос" required></textarea>
                     <input type="submit" name="submit" class="btn main-btn-remodal" value="ОТПРАВИТЬ">
                     <input type="hidden" name="formData" value="Заявка с сайта">
                 </form>
@@ -105,24 +105,27 @@
             </div>
         </section>
         <section class="our-services-container">
-            <h1 class="our-service-title">Наши услуги</h1>
+            <a name="our-service" class="link-display-none"></a>
+            <h1 name="our-service" class="our-service-title">
+                Наши услуги
+            </h1>
             <div class="our-service our-service-1">
                 <div class="views-field-field-service-icon">
-                    <img src="img/hands.png">
+                    <img src="img/hands.png" alt="logo">
                 </div>
                 <h2 class="views-field-title">ПОКУПКА ЗАДОЛЖЕННОСТИ ПО КРЕДИТАМ ФИЗИЧЕСКИХ И ЮРИДИЧЕСКИХ ЛИЦ</h2>
                 <p class="info-our-service">Основным направлением деятельности компании "Форвард" является приобретение прав требований, возникающих из кредитных договоров, заключенных первоначальным кредитором (продавцом) как с физическими, так и с юридическими лицами.</p>
             </div>
             <div class="our-service our-service-2">
                 <div class="views-field-field-service-icon">
-                    <img src="img/hands.png">
+                    <img src="img/hands.png" alt="logo">
                 </div>
                 <h2 class="views-field-title">ВЗЫСКАНИЕ ЗАДОЛЖЕННОСТИ ПО АГЕНТСКОЙ СХЕМЕ</h2>
                 <p class="info-our-service">Компания "Форвард" предоставляет полный комплекс услуг по взысканию задолженности в рамках агентского договора.</p>
             </div>
             <div class="our-service our-service-3">
                 <div class="views-field-field-service-icon">
-                    <img src="img/hands.png">
+                    <img src="img/hands.png" alt="logo">
                 </div>
                 <h2 class="views-field-title">ДОСУДЕБНОЕ ВЗЫСКАНИЕ</h2>
                 <p class="info-our-service">Soft-collection  - дистанционное взыскание задолженности;
@@ -130,13 +133,14 @@
             </div>
             <div class="our-service our-service-4">
                 <div class="views-field-field-service-icon">
-                    <img src="img/hands.png">
+                    <img src="img/hands.png" alt="logo">
                 </div>
                 <h2 class="views-field-title">CУДЕБНОЕ ВЗЫСКАНИЕ</h2>
                 <p class="info-our-service">Legal-collection - представительство в суде и сопровождение процедуры исполнительного производства.</p>
             </div>
         </section>
         <section class="company-info">
+            <a name="link-company"></a>
             <h2>о компании</h2>
             <p>Компания "Форвард" создана в 2014 году в г. Новосибирске и предоставляет полный комплекс услуг по взысканию задолженности физических и юридических лиц. Основная специализация - покупка портфелей проблемных кредитов. Менеджеры компании имеют более чем 10 летний опыт работы на рынке взыскания задолженности и в крупных розничных банках.</p>
         </section>
@@ -144,14 +148,14 @@
             <div class="documents-content">
                 <figure>
                     <a href="documents/svo.pdf" target="_blank">
-                        <img src="img/svo.png">
+                        <img src="img/svo.png" alt="Свидетельство о включении в Реестр юридических лиц, осуществляющих деятельность по возврату просроченной задолженности">
                     </a>
                     <a href="documents/svo.pdf" class="title-docks" target="_blank">Свидетельство о включении в Реестр юридических лиц, осуществляющих деятельность по возврату просроченной задолженности
                     </a>
                 </figure>
                 <figure>
                     <a href="documents/politicks.pdf" target="_blank">
-                        <img src="img/politicks.png">
+                        <img src="img/politicks.png" alt="Политика персональных данных">
                     </a>
                     <a href="documents/svo.pdf" class="title-docks" target="_blank">Политика персональных данных</a>
                 </figure>
@@ -172,17 +176,21 @@
                 </figure>
             </div>-->
         </section>
+        <section class="questions-and-answers-container">
+            <a name="link-questions-and-answers" class="invisible-link"></a>
+        </section>
     </main>
     <footer>
+        <a name="contacts" class="invisible-link"></a>
         <section class="links-footer adaptive-links-footer">
             <article class="adaptive-container-contacts-footer">
                 <h2>Контакты</h2>
                 <figure>
-                    <a href="tel:+7 (804) 333-41-33" target="_blank" class="container-icon-contact">
+                    <a href="tel:+7(804)333-41-33" target="_blank" class="container-icon-contact">
                         <i class="fas fa-mobile-alt"></i>
                     </a>
                     <figcaption>
-                        <a href="tel:+7 (804) 333-41-33" target="_blank" class="hvr-float-shadow"> +7&nbsp;(804)&nbsp;333&#8209;41&#8209;33</a>
+                        <a href="tel:+7(804)333-41-33" target="_blank" class="hvr-float-shadow"> +7&nbsp;(804)&nbsp;333&#8209;41&#8209;33</a>
                     </figcaption>
                 </figure>
                 <figure>
@@ -215,31 +223,31 @@
                 <figure>
                     <i class="fas fa-caret-right links-nav-footer"></i>
                     <figcaption>
-                        <a href="#">Главная</a>
+                        <a href="index.php">Главная</a>
                     </figcaption>
                 </figure>
                 <figure>
                     <i class="fas fa-caret-right links-nav-footer"></i>
                     <figcaption>
-                        <a href="#">О&nbsp;Компании</a>
+                        <a href="#link-company">О&nbsp;Компании</a>
                     </figcaption>
                 </figure>
                 <figure>
                     <i class="fas fa-caret-right links-nav-footer"></i>
                     <figcaption>
-                        <a href="#">Услуги</a>
+                        <a href="#our-service">Услуги</a>
                     </figcaption>
                 </figure>
                 <figure>
                     <i class="fas fa-caret-right links-nav-footer"></i>
                     <figcaption>
-                        <a href="#">Обратная&nbsp;связь</a>
+                        <a href="#modal">Обратная&nbsp;связь</a>
                     </figcaption>
                 </figure>
                 <figure>
                     <i class="fas fa-caret-right links-nav-footer"></i>
                     <figcaption>
-                        <a href="#">Вопросы&nbsp;и&nbsp;ответы</a>
+                        <a href="#link-questions-and-answers">Вопросы&nbsp;и&nbsp;ответы</a>
                     </figcaption>
                 </figure>
             </article>
@@ -256,12 +264,30 @@
         </section>
     </footer>
 </div>
+<div id="toTop" class="toTop">
+    <i class="fas fa-chevron-up"></i>
+</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/remodal.min.js"></script>
 <script src="js/script.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+        $('#toTop').click(function() {
+            $('body,html').animate({scrollTop:0},800);
+        });
+    });
+</script>
 <script>
      $(document).ready(function() {
     $("#phone").mask("+7 (999) 999-99-99");
