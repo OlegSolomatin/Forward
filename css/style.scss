@@ -203,7 +203,6 @@ $font-size-h-min800: 22px;
     width: 100%;
     grid-area: container-info-text;
     @include flex-col-cen;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     text-align: center;
     h2 {
@@ -281,7 +280,6 @@ $font-size-h-min800: 22px;
             text-align: center;
             @include animationheadernav;
             a{
-              width: -webkit-max-content;
               width: -moz-max-content;
               width: max-content;
             }
@@ -371,73 +369,6 @@ $font-size-h-min800: 22px;
         }
       }
     }
-    /*.our-services-container{
-      @include flex-col-cen-cen;
-      max-width: 1920px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 0 15px;
-      .our-service-title{
-        margin: 35px 0;
-        @include fonttitle;
-      }
-      .our-service-title:before {
-        content: '';
-        background: #000;
-        width: 200px;
-        height: 2px;
-        position: absolute;
-        margin: 21px 0 0 -225px;
-      }
-      .our-service-title:after {
-        content: '';
-        background: #000;
-        width: 200px;
-        height: 2px;
-        position: absolute;
-        margin: 21px 0 0 24px;
-      }
-      .our-service{
-        margin: 25px 0;
-        max-width: 1200px;
-        .views-field-field-service-icon{
-          width: 100px;
-          height: 100px;
-          border-radius: 50px;
-          @include flex-col-cen-cen;
-          background: white;
-          margin-top: -46px;
-        }
-        @include flex-col-cen;
-        h2{
-          @include fontourserviceH2;
-          margin: 140px 0 10px 0;
-        }
-        p{
-          @include fontourserviceP;
-        }
-      }
-      .our-service-1{
-        background-image: url("../img/business-hero1_0.jpg");
-        background-repeat: no-repeat;
-        background-position: top;
-      }
-      .our-service-2{
-        background-image: url("../img/business-hero1_0.jpg");
-        background-repeat: no-repeat;
-        background-position: top;
-      }
-      .our-service-3{
-        background-image: url("../img/business-hero1_0.jpg");
-        background-repeat: no-repeat;
-        background-position: top;
-      }
-      .our-service-4{
-        background-image: url("../img/business-hero1_0.jpg");
-        background-repeat: no-repeat;
-        background-position: top;
-      }
-    }*/
     .our-services-container {
       max-width: 1200px;
       width: 100%;
@@ -623,8 +554,6 @@ $font-size-h-min800: 22px;
       width: 100%;
       display: -ms-grid;
       display: grid;
-      /*-ms-grid-columns: (1fr)[3];*/
-      -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3,1fr);
       padding: 25px 0;
       article {
@@ -695,7 +624,7 @@ $font-size-h-min800: 22px;
   cursor:pointer;
   display:none;
   color:#333;
-  font-family:verdana;
+  font-family: Verdana;
   font-size:11px;
   i{
     color: white;
@@ -715,6 +644,71 @@ $font-size-h-min800: 22px;
     transition: .5s;
     color: $blue;
   }
+}
+
+.g-recaptcha{
+  margin: 0 auto;
+  width: max-content;
+}
+
+#okCookie{
+  background-color:#F2F2F2;
+  color:#333333;
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  padding:10px;
+  font-family:sans-serif;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top:1px solid #ccc;
+  z-index:10;
+}
+
+#okCookie p{margin:0 0 10px 0; float:left; padding:5px 0px;}
+
+#okCookie #okClose, #okCookie #okCprivacy{
+  padding:5px 20px;
+  float:right;
+  margin-left:10px;
+  text-decoration:none;
+  border-radius:3px;
+  color:white;
+}
+
+#okCookie #okClose{
+  background-color:#39B54A;
+  text-shadow:0px 1px 1px #507F2B;
+  box-shadow:inset 0px -1px 1px #507F2B;
+}
+
+#okCookie #okClose:hover{background-color:#42ce55}
+
+#okCookie #okCprivacy{
+  background-color:#8D9499;
+  text-shadow:0px 1px 1px #63666B;
+  box-shadow:inset 0px -1px 1px #63666B;
+}
+
+#okCookie #okCprivacy:hover{background-color:#a0a8ae}
+
+.okcBeginAnimate{
+  -webkit-animation: myfirst 2s;
+  animation: myfirst 2s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 // Стандатрные ноутбуки( <1366px)
@@ -913,6 +907,8 @@ $font-size-h-min800: 22px;
         display: none;
       }
       .our-services-container {
+        .our-service-title:before {display: none}
+        .our-service-title:after {display: none}
         grid-row-gap: 10px;
         .our-service{
           grid-template-areas: "container-info-text";
@@ -925,6 +921,10 @@ $font-size-h-min800: 22px;
         }
         .our-service .views-field-field-service-icon {display: none;}
         .our-service .container-info-text {padding: 0 10px;}
+      }
+      .company-info{
+        h2:before {display: none}
+        h2:after {display: none}
       }
       .documents-container{
         .documents-content {

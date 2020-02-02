@@ -45,20 +45,20 @@
     <header id="header">
         <section class="navigation-wrapper-container adaptive-grid-container">
             <div class="container-link-img-home-page adaptive-container-link-img-home-page">
-                <a href="index.php" id="logo" rel="home" title="На главную страницу сайта. Форвард: Финансовая Компания" class="link-img-home-page">
-                    <img src="img/logo.png" alt="Форвард: Финансовая Компания">
+                <a href="http://caforward.ru/" id="logo" rel="home" title="На главную страницу сайта. Форвард: Финансовая Компания" class="link-img-home-page">
+                    <img src="http://caforward.ru/img/logo.png" alt="Форвард: Финансовая Компания">
                 </a>
             </div>
             <nav id="nav-header" class="nav-header adaptive-nav-header">
                 <ul>
                     <li>
-                        <a href="../index.php" class="hvr-underline-from-center">Главная</a>
+                        <a href="http://caforward.ru/" class="hvr-underline-from-center">Главная</a>
                     </li>
                     <li>
                         <a href="#our-service" class="hvr-underline-from-center">Услуги</a>
                     </li>
                     <li>
-                        <a href="#link-company" class="hvr-underline-from-center">О&nbsp;компании</a>
+                        <a href="#link-company" class="hvr-underline-from-center">О&nbsp;Компании</a>
                     </li>
                     <li>
                         <a href="index2.html" class="hvr-underline-from-center">Информация для клиентов</a>
@@ -82,13 +82,15 @@
             <div class="remodalBorder">
                 <p><img src="img/footer-logo-white.png" alt="Форвард: Финансовая Компания"></p>
                 <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-                <form id="form">
+                <form id="form" method="POST">
                     <h2 id="modal1Title">Оставьте ваши контактные данные и наша служба поддержки свяжется с вами</h2>
                     <input type="text" class="putName" name="name" placeholder="Ваше ФИО" pattern="^[А-Яа-яЁё\s]+$" required>
                     <input id="phone" name="phone" type="tel" class="putPhone" placeholder="Ваш телефон" required>
                     <input name="mail" type="email" class="mail" placeholder="Ваш Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
                     <textarea name="textarea"  class="textarea" placeholder="Ваш вопрос" required></textarea>
                     <input type="submit" name="submit" class="btn main-btn-remodal" value="ОТПРАВИТЬ">
+					<input name="formInfo" class="formInfo" type="hidden" value=""/>
+					<div class="g-recaptcha" data-sitekey="6LddGtUUAAAAAJlNH5iVG58-o_hEUDuxhhis70oV" data-theme="light"></div>
                     <input type="hidden" name="formData" value="Заявка с сайта">
                 </form>
             </div>
