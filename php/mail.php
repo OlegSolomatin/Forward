@@ -2,12 +2,12 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['name'])) {$name = $_POST['name'];}
     if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
-    if (isset($_POST['mail'])) {$mail = $_POST['mail']}
-    if (isset($_POST['textarea'])) {$textarea = $_POST['textarea']}
+    if (isset($_POST['mail'])) {$mail = $_POST['mail'];}
+    if (isset($_POST['textarea'])) {$textarea = $_POST['textarea'];}
     if (isset($_POST['formData'])) {$formData = $_POST['formData'];}
 
-    $to = "olegsolomatin2018@yandex.ru"; /*Укажите адрес, га который должно приходить письмо*/
-    $sendfrom   = "mailuser@caforward.ru"; /*Укажите адрес, с которого будет приходить письмо, можно не настоящий, нужно для формирования заголовка письма*/
+    $to = "olegsolomatin2018@yandex.ru"; /*Укажите адрес, на который должно приходить письмо*/
+    $sendfrom   = "info@caforward.ru"; /*Укажите адрес, с которого будет приходить письмо, можно не настоящий, нужно для формирования заголовка письма*/
     $headers  = "From: " . strip_tags($sendfrom) . "\r\n";
     $headers .= "Reply-To: ". strip_tags($sendfrom) . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
