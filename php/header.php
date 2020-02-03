@@ -29,6 +29,12 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <!-- Chrome, Firefox, Opera -->
+    <meta name="theme-color" content="#33BEE5">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#33BEE5">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <title>Форвард: Финансовая Компания</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <meta name="description" content="Форвард: Финансовая Компания предоставляет полный комплекс услуг по взысканию задолженностей">

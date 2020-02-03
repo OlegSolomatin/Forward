@@ -19,8 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     if (isset($_POST['textarea'])) {$textarea = $_POST['textarea'];}
     if (isset($_POST['formData'])) {$formData = $_POST['formData'];}
 
-    $to = "olegsolomatin2018@yandex.ru"; /*Укажите адрес, на который должно приходить письмо*/
-    $sendfrom   = "info@caforward.ru"; /*Укажите адрес, с которого будет приходить письмо, можно не настоящий, нужно для формирования заголовка письма*/
+    $to = "c.centr@caforward.ru"; /*Укажите адрес, на который должно приходить письмо*/
+    $sendfrom   = " zayvkasite@caforward.ru"; /*Укажите адрес, с которого будет приходить письмо, можно не настоящий, нужно для формирования заголовка письма*/
     $headers  = "From: " . strip_tags($sendfrom) . "\r\n";
     $headers .= "Reply-To: ". strip_tags($sendfrom) . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
