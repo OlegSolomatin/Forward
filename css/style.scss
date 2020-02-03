@@ -284,6 +284,7 @@ $font-size-h-min800: 22px;
               width: max-content;
             }
             a:hover {
+              cursor: pointer;
               text-decoration: none;
               color:black;
             }
@@ -306,7 +307,7 @@ $font-size-h-min800: 22px;
         @include flex-col-cen-cen;
         .phone-number-header-container{
           .hvr-buzz-out {
-            font-size: 1em;
+            font-size: 1.2em;
             font-family: "Montserrat Regular", sans-serif;
           }
           .hvr-buzz-out:hover {
@@ -545,10 +546,6 @@ $font-size-h-min800: 22px;
     width: 100%;
     background: $foterbg;
     @include flex-col-cen-cen;
-    .invisible-link{
-      text-decoration: none;
-      color: transparent;
-    }
     .links-footer {
       max-width: 1200px;
       width: 100%;
@@ -584,6 +581,11 @@ $font-size-h-min800: 22px;
             a{
               @include fontfooterlinks;
               color: white;
+            }
+            a:hover{
+              cursor: pointer;
+              color: white;
+              text-decoration: underline;
             }
           }
           @include flex-row-cen;
@@ -626,9 +628,10 @@ $font-size-h-min800: 22px;
   color:#333;
   font-family: Verdana;
   font-size:11px;
+  border-radius: 5px;
   i{
-    color: white;
-    font-size: 35px;
+      color: white;
+      font-size: 35px;
   }
 }
 .toTop:hover{
@@ -644,11 +647,6 @@ $font-size-h-min800: 22px;
     transition: .5s;
     color: $blue;
   }
-}
-
-.g-recaptcha{
-  margin: 0 auto;
-  width: max-content;
 }
 
 #okCookie{

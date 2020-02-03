@@ -39,10 +39,9 @@
                 </a>
             </div>
         </section>
-        <section class="our-services-container">
+        <section id="ourservicelink" name="ourservice" class="our-services-container">
             <h1 name="our-service" class="our-service-title">
                 Наши услуги
-                <a name="our-service" class="link-display-none"></a>
             </h1>
             <div class="our-service our-service-1">
                 <div class="views-field-field-service-icon">
@@ -81,8 +80,7 @@
                     <p class="info-our-service">Legal-collection - заключительная стадия работы с должником. Проводится кредитором (его сотрудником или представителем) в рамках судопроизводства или исполнительного производства. Как правило legal-collection осуществляется со 150-180-го дня с момента возникновения просроченной задолженности и заканчивается вынесением судебного решения и его исполнением, либо получением акта о невозможности взыскания и списанием задолженности.</p>                </div>
             </div>
         </section>
-        <section class="company-info">
-            <a name="link-company"></a>
+        <section id="linkkompany" class="company-info">
             <h2>о компании</h2>
             <p>Компания "Форвард" создана в 2014 году в г. Новосибирске и предоставляет полный комплекс услуг по взысканию задолженности физических и юридических лиц. Основная специализация - покупка портфелей проблемных кредитов. Менеджеры компании имеют более чем 10 летний опыт работы на рынке взыскания задолженности и в крупных розничных банках.</p>
         </section>
@@ -99,7 +97,7 @@
                     <a href="documents/politicks.pdf" target="_blank">
                         <img src="http://caforward.ru/img/politicks.png" alt="Политика обработки персональных данных">
                     </a>
-                    <a href="documents/svo.pdf" class="title-docks" target="_blank">Политика обработки персональных данных</a>
+                    <a href="https://caforward.ru/documents/politicks.pdf" class="title-docks" target="_blank">Политика обработки персональных данных</a>
                 </figure>
             </div>
             <!--<div class="documents-content">

@@ -1,10 +1,9 @@
 <?php
 require_once __DIR__ . '/recaptchalib.php';
 // Введите свой секретный ключ
-$secret = "6LddGtUUAAAAAFwwah3MOJXhz3YjV4SyZO9TyBz3";
+$secret = "6LcFHNUUAAAAABTuNKZFnhZU3et5sisDthsnYuHW";
 // пустой ответ каптчи
 $response = null;
-// Проверка вашего секретного ключа
 $reCaptcha = new ReCaptcha($secret);
 if ($_POST["g-recaptcha-response"]) {
 $response = $reCaptcha->verifyResponse(
@@ -41,4 +40,5 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     http_response_code(403);
     echo "Попробуйте еще раз";
 }
+
 ?>

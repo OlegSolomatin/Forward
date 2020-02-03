@@ -1,5 +1,4 @@
-<footer>
-        <a name="contacts" class="invisible-link"></a>
+<footer id="linkcontact">
         <section class="links-footer adaptive-links-footer">
             <article class="adaptive-container-contacts-footer">
                 <h2>Контакты</h2>
@@ -12,11 +11,11 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <a href="mailto:info@caforward.ru" target="_blank" class="container-icon-contact">
+                    <a href="mailto:info@caforward.ru?subject=Вопрос с сайта&body=Здравствуйте, " target="_blank" class="container-icon-contact">
                         <i class="far fa-envelope"></i>
                     </a>
                     <figcaption>
-                        <a href="mailto:info@caforward.ru" target="_blank" class="hvr-float-shadow"> info@caforward.ru</a>
+                        <a href="mailto:info@caforward.ru?subject=Вопрос с сайта&body=Здравствуйте, " target="_blank" class="hvr-float-shadow"> info@caforward.ru</a>
                     </figcaption>
                 </figure>
                 <figure>
@@ -41,19 +40,19 @@
                 <figure>
                     <i class="fas fa-caret-right links-nav-footer"></i>
                     <figcaption>
-                        <a href="http://caforward.ru/">Главная</a>
+                        <a  href="http://caforward.ru/">Главная</a>
                     </figcaption>
                 </figure>
                 <figure>
                     <i class="fas fa-caret-right links-nav-footer"></i>
                     <figcaption>
-                        <a href="#link-company">О&nbsp;Компании</a>
+                        <a id="companyfooter" >О&nbsp;Компании</a>
                     </figcaption>
                 </figure>
                 <figure>
                     <i class="fas fa-caret-right links-nav-footer"></i>
                     <figcaption>
-                        <a href="#our-service">Услуги</a>
+                        <a id="ourservicefooter">Услуги</a>
                     </figcaption>
                 </figure>
                 <figure>
@@ -65,7 +64,7 @@
                 <figure>
                     <i class="fas fa-caret-right links-nav-footer"></i>
                     <figcaption>
-                        <a href="http://caforward.ru/php/info.php">Информация для клиентов</a>
+                        <a href="http://caforward.ru/php/info.php">Информация для должников</a>
                     </figcaption>
                 </figure>
             </article>
@@ -78,7 +77,7 @@
         </section>
         <section class="copyright">
             <p>© ООО "Форвард" 2020 Все права защищены</p>
-            <p>Оформление и верстка сайта: <a href="https://hh.ru/resume/8258cf5cff07a9fac80039ed1f32747a38476a" target="_blank">Олег&nbsp;Соломатин</a> <a href="#">Артём&nbsp;Пучков</a></p>
+            <p>Верстка и оформление сайта: <a href="https://hh.ru/resume/8258cf5cff07a9fac80039ed1f32747a38476a" target="_blank">Олег&nbsp;Соломатин</a> <a href="#">Артём&nbsp;Пучков</a></p>
         </section>
     </footer>
 </div>
@@ -88,92 +87,15 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--Mail modal window-->
 <script src="js/remodal.min.js"></script>
 <script src="js/script.min.js"></script>
-<script>
-    (function(){
-
-        //Change these values
-        var msg = "Мы используем файлы cookie. Продолжив работу с сайтом, вы соглашаетесь с Политикой обработки персональных данных. ";
-        var closeBtnMsg = "Согласен(а)";
-        var privacyBtnMsg = "Узнать больше";
-        var privacyLink = "documents/politicks.pdf";
-
-        //check cookies
-        if(document.cookie){
-            var cookieString = document.cookie;
-            var cookieList = cookieString.split(";");
-            // if cookie named OKCookie is found, return
-            for(x = 0; x < cookieList.length; x++){
-                if (cookieList[x].indexOf("OKCookie") != -1){return};
-            }
-        }
-
-        var docRoot = document.body;
-        var okC = document.createElement("div");
-        okC.setAttribute("id", "okCookie");
-        var okCp = document.createElement("p");
-        var okcText = document.createTextNode(msg);
-
-        //close button
-        var okCclose = document.createElement("a");
-        var okcCloseText = document.createTextNode(closeBtnMsg);
-        okCclose.setAttribute("href", "#");
-        okCclose.setAttribute("id", "okClose");
-        okCclose.appendChild(okcCloseText);
-        okCclose.addEventListener("click", closeCookie, false);
-
-        //privacy button
-        var okCprivacy = document.createElement("a");
-        var okcPrivacyText = document.createTextNode(privacyBtnMsg);
-        okCprivacy.setAttribute("href", privacyLink);
-        okCprivacy.setAttribute("id", "okCprivacy");
-        okCprivacy.appendChild(okcPrivacyText);
-
-        //add to DOM
-        okCp.appendChild(okcText);
-        okC.appendChild(okCp);
-        okC.appendChild(okCclose);
-        okC.appendChild(okCprivacy);
-        docRoot.appendChild(okC);
-
-        okC.classList.add("okcBeginAnimate");
-
-        function closeCookie(){
-            var cookieExpire = new Date();
-            cookieExpire.setFullYear(cookieExpire.getFullYear() +2);
-            document.cookie="OKCookie=1; expires=" + cookieExpire.toGMTString() + ";";
-            docRoot.removeChild(okC);
-        }
-
-    })();
-</script>
-<script>
-    $(function() {
-        $(window).scroll(function() {
-            if($(this).scrollTop() != 0) {
-                $('#toTop').fadeIn();
-            } else {
-                $('#toTop').fadeOut();
-            }
-        });
-        $('#toTop').click(function() {
-            $('body,html').animate({scrollTop:0},800);
-        });
-    });
-</script>
-<script>
-    $(document).ready(function() {
-        $("#phone").mask("+7 (999) 999-99-99");
-    });
-</script>
-<script type="text/javascript">
-$(".linkButton").click(function() {
-    $( "input[name*='formInfo']" ).val($(this).attr( "title" ));
-});
-</script>
+<script src="js/index.min.js"></script>
+<!--Cookies modal window-->
+<!--Mask number phone modal window-->
+<script src="js/jquery.maskedinput.min.js"></script>
+<!--Google reCaptcha-->
 <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>
