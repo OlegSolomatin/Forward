@@ -1,8 +1,73 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'montserratregular';
+  src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+  url('../fonts/montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'latoregular';
+  src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+  url('../fonts/lato-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'roboto_condensedregular';
+  src: url('../fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+  url('../fonts/robotocondensed-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'roboto_condensedbold';
+  src: url('../fonts/robotocondensed-bold-webfont.woff2') format('woff2'),
+  url('../fonts/robotocondensed-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'latobold';
+  src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+  url('../fonts/lato-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'montserratbold';
+  src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+  url('../fonts/montserrat-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 a {
   text-decoration: none;
   color: black;
 }
+
 $blue: #0096d8;
 $aquamarine: #28a6bf;
 $foterbg: #186689;
@@ -61,14 +126,14 @@ $font-size-h-min800: 22px;
   font-size: $font-size;
   letter-spacing: 0.5px;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'open_sansregular', sans-serif;
 }
 @mixin fontourserviceH2($font-size) {
   font-weight: 400;
   color: $blue;
   font-size: $font-size;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'open_sansregular', sans-serif;
   text-transform: uppercase;
 }
 @mixin fonttitledoc{
@@ -76,10 +141,10 @@ $font-size-h-min800: 22px;
   font-size: 16px;
   text-align: center;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'open_sansregular', sans-serif;
 }
 @mixin fontfooterlinks{
-  font-family: "Open Sans", sans-serif;
+  font-family: 'open_sansregular', sans-serif;
   text-decoration: none;
 }
 @mixin fontfooterh1-6{
@@ -304,6 +369,7 @@ $font-size-h-min800: 22px;
       }
       .contact{
         @include flex-col-cen-cen;
+        text-align: center;
         .phone-number-header-container{
           .hvr-buzz-out {
             font-size: 1.2em;

@@ -2,7 +2,7 @@
  "name": "Caforward.ru",
  "short_name": "CF",
  "lang": "ru-RU",
- "start_url": "http://caforward.ru/",
+ "start_url": "https://caforward.ru/",
  "display": "standalone",
  "theme_color": "#E6E6FA",
  "background_color": "#E6E6FA",
