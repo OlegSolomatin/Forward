@@ -11,19 +11,19 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="http://caforward.ru/img/1.jpg" class="d-block w-100" alt="...">
+                        <img src="https://caforward.ru/img/1.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <p>Действуем строго в соответствии с законодательством РФ</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="http://caforward.ru/img/2.jpg" class="d-block w-100" alt="...">
+                        <img src="https://caforward.ru/img/2.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <p>Гарантируем высокие стандарты качества предоставляемых услуг</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="http://caforward.ru/img/3.jpg" class="d-block w-100" alt="...">
+                        <img src="https://caforward.ru/img/3.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <p>Обеспечиваем высокую эффективность взыскания</p>
                         </div>
@@ -45,8 +45,7 @@
             </h1>
             <div class="our-service our-service-1">
                 <div class="views-field-field-service-icon">
-                    <!--<img src="img/hands.png" alt="logo">-->
-                    <img src="http://caforward.ru/img/us.jpg" alt="logo">
+                    <img src="https://caforward.ru/img/us.jpg" alt="logo">
                 </div>
                 <div class="container-info-text">
                     <h2 class="views-field-title">ПОКУПКА ЗАДОЛЖЕННОСТИ ПО КРЕДИТАМ ФИЗИЧЕСКИХ И ЮРИДИЧЕСКИХ ЛИЦ</h2>
@@ -55,7 +54,7 @@
             </div>
             <div class="our-service our-service-2">
                 <div class="views-field-field-service-icon">
-                    <img src="http://caforward.ru/img/doki.png" alt="logo">
+                    <img src="https://caforward.ru/img/doki.jpg" alt="logo">
                 </div>
                 <div class="container-info-text">
                     <h2 class="views-field-title">ВЗЫСКАНИЕ ЗАДОЛЖЕННОСТИ ПО АГЕНТСКОЙ СХЕМЕ</h2>
@@ -64,7 +63,7 @@
             </div>
             <div class="our-service our-service-3">
                 <div class="views-field-field-service-icon">
-                    <img src="http://caforward.ru/img/telefon-min.png" alt="logo">
+                    <img src="https://caforward.ru/img/telefon-min.jpg" alt="logo">
                 </div>
                 <div class="container-info-text">
                     <h2 class="views-field-title">ДОСУДЕБНОЕ ВЗЫСКАНИЕ</h2>
@@ -73,7 +72,7 @@
             </div>
             <div class="our-service our-service-4">
                 <div class="views-field-field-service-icon">
-                    <img src="http://caforward.ru/img/sud-min.png" alt="logo">
+                    <img src="https://caforward.ru/img/sud-min.jpg" alt="logo">
                 </div>
                 <div class="container-info-text">
                     <h2 class="views-field-title">CУДЕБНОЕ ВЗЫСКАНИЕ</h2>
@@ -87,34 +86,34 @@
         <section class="documents-container">
             <div class="documents-content">
                 <figure>
-                    <a href="documents/svo.pdf" target="_blank">
-                        <img src="http://caforward.ru/img/svo.png" alt="Свидетельство о включении в Реестр юридических лиц, осуществляющих деятельность по возврату просроченной задолженности">
+                    <a href="https://caforward.ru/documents/svo.pdf" target="_blank">
+                        <img src="https://caforward.ru/img/svo.jpg" alt="Свидетельство о включении в Реестр юридических лиц, осуществляющих деятельность по возврату просроченной задолженности">
                     </a>
-                    <a href="documents/svo.pdf" class="title-docks" target="_blank">Свидетельство о включении в Реестр юридических лиц, осуществляющих деятельность по возврату просроченной задолженности
+                    <a href="https://caforward.ru/documents/svo.pdf" class="title-docks" target="_blank">Свидетельство о включении в Реестр юридических лиц, осуществляющих деятельность по возврату просроченной задолженности
                     </a>
                 </figure>
                 <figure>
-                    <a href="documents/politicks.pdf" target="_blank">
-                        <img src="http://caforward.ru/img/politicks.png" alt="Политика обработки персональных данных">
+                    <a href="https://caforward.ru/documents/politicks.pdf" target="_blank">
+                        <img src="https://caforward.ru/img/politicks.png" alt="Политика обработки персональных данных">
                     </a>
                     <a href="https://caforward.ru/documents/politicks.pdf" class="title-docks" target="_blank">Политика обработки персональных данных</a>
                 </figure>
             </div>
-            <!--<div class="documents-content">
+            <div class="documents-content">
                 <figure>
-                    <a href="documents/svo.pdf" target="_blank">
-                        <img src="img/svo.png">
+                    <a href="https://caforward.ru/documents/PPK.pdf" target="_blank">
+                        <img src="https://caforward.ru/img/PPK.png">
                     </a>
-                    <a href="documents/svo.pdf" class="title-docks" target="_blank">Свидетельство о включении в Реестр юридических лиц, осуществляющих деятельность по возврату просроченной задолженности
+                    <a href="https://caforward.ru/documents/PPK.pdf" class="title-docks" target="_blank">Политика по противодействию коррупции
                     </a>
                 </figure>
-                <figure>
+               <!-- <figure>
                     <a href="documents/politicks.pdf" target="_blank">
                         <img src="img/politicks.png">
                     </a>
                     <a href="documents/svo.pdf" class="title-docks" target="_blank">Политика персональных данных</a>
-                </figure>
-            </div>-->
+                </figure>-->
+            </div>
         </section>
     </main>
 <?php

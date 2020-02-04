@@ -92,7 +92,6 @@
 <script src="js/remodal.min.js"></script>
 <script src="js/script.min.js"></script>
 <script src="js/index.min.js"></script>
-<!--Cookies modal window-->
 <!--Mask number phone modal window-->
 <script src="js/jquery.maskedinput.min.js"></script>
 <!--Google reCaptcha-->

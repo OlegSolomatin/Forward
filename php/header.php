@@ -20,16 +20,16 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/57313120" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157535506-1"></script>
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157535506-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-157535506-1');
-    </script>
+    </script>-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
-    <!-- Chrome, Firefox, Opera -->
+	<!-- Chrome, Firefox, Opera -->
     <meta name="theme-color" content="#33BEE5">
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#33BEE5">
@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/7e4d23cf7d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans&amp;display=swap" rel="stylesheet">
-    <link rel="manifest" href="http://caforward.ru/manifest.json">
+    <link rel="manifest" href="https://caforward.ru/manifest.json">
     <link rel="stylesheet" type="text/css" href="css/remodal.min.css">
     <link rel="stylesheet" type="text/css" href="css/remodal-default-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -52,8 +52,8 @@
     <header id="header">
         <section class="navigation-wrapper-container adaptive-grid-container">
             <div class="container-link-img-home-page adaptive-container-link-img-home-page">
-                <a href="http://caforward.ru/" id="logo" rel="home" title="На главную страницу сайта. Форвард: Финансовая Компания" class="link-img-home-page">
-                    <img src="http://caforward.ru/img/logo.png" alt="Форвард: Финансовая Компания">
+                <a href="https://caforward.ru/" id="logo" rel="home" title="На главную страницу сайта. Форвард: Финансовая Компания" class="link-img-home-page">
+                    <img src="https://caforward.ru/img/logo.png" alt="Форвард: Финансовая Компания">
                 </a>
             </div>
             <nav id="nav-header" class="nav-header adaptive-nav-header">
@@ -87,7 +87,7 @@
         <!-- MODAL WINDOWS -->
         <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
             <div class="remodalBorder">
-                <p><img src="img/footer-logo-white.png" alt="Форвард: Финансовая Компания"></p>
+                <p><img src="https://caforward.ru/img/footer-logo-white.png" alt="Форвард: Финансовая Компания"></p>
                 <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
                 <form id="form" method="POST">
                     <h2 id="modal1Title">Оставьте ваши контактные данные и наша служба поддержки свяжется с вами</h2>
