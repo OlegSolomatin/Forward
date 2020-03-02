@@ -17,19 +17,12 @@
             webvisor:true
         });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/57313120" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img class=lazyload  alt=img"data-src="https://mc.yandex.ru/watch/57313120" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157535506-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-157535506-1');
-    </script>-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
-	<!-- Chrome, Firefox, Opera -->
+    <!-- Chrome, Firefox, Opera -->
+    <meta name="msapplication-config" content="browserconfig.xml" />
     <meta name="theme-color" content="#33BEE5">
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#33BEE5">
@@ -39,10 +32,8 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <meta name="description" content="Форвард: Финансовая Компания предоставляет полный комплекс услуг по взысканию задолженностей">
     <meta name="og:description" content="Коллекторы требуют долг, Коллектор долги, Коллекторы требуют долг что делать, Долг коллекторам, Могут ли коллекторы требовать долг, Коллекторы звонят по долгу что делать, Звонят коллекторы по долгам, Если звонят коллекторы по кредиту что делать, Подают ли коллекторы в суд, Коллекторы после решения суда, Долг выкупили коллекторы что делать, Коллекторы выкупили долг у банка что делать, Банк продал долг коллекторам оспорить, Банк продал долг по кредиту коллекторам, Если долг продали коллекторам что делать, Как избавиться от долга коллекторам, Коллекторы подали в суд что делать, Банк продал кредитный долг коллекторам, Долг перед коллекторами, Долг перед коллекторами что делать, Долги помощь юриста, Если долг по кредиту передан коллекторам, Банк продал кредитный долг коллекторам, Банк продал долг коллекторам без моего согласия, Как узнать продал ли банк долг коллекторам, Как узнать продал ли долг банк, Банк продал долг по кредиту коллекторам. Банк продал долг коллекторам что делать, Банк продал кредитный долг коллекторам, Коллекторы советы юристов, Как общаться с коллекторами советы юриста, Как защититься от коллекторов советы юриста, Как избавиться от автодозвона коллекторов, Как избавиться от назойливых звонков коллекторов, Коллекторы звонят как избавиться, Как избавиться от звонков коллекторов родственникам, Как избавиться от коллекторов законно, Как избавиться от звонков коллекторов на работу, Как избавиться от коллекторов и просроченного кредита, Как избавиться от звонков коллекторов если долг, Как избавиться от долга коллекторам, За какой процент банки продают долги коллекторам, Как защититься от коллекторов советы юриста, как уменьшить сумму долга, долг продан коллекторам после решения суда, долг у коллекторов что делать, что делать если банки передали коллекторам долг, банк продал долг по кредиту коллекторам, как уменьшить долг по кредиту в суде, Банк продал долг коллекторам, долг по кредиту продан коллекторам, За сколько покупают долги коллекторы, помощь юриста по долгам, банк передал долг коллекторам что делать, Банк продал долг по кредиту коллекторам, Банк продал кредитный долг коллекторам, за сколько банк продает долг коллекторам, За сколько покупают долги коллекторы, банк отдал долг коллекторам, долг по кредиту передан коллекторам, подают ли коллекторы в суд на должников, Форвард, ООО Форвард, Форвард Новосибирск, Агентство взыскания Форвард, Форвард подал в суд, Forward, Что делать если звонят коллекторы">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/7e4d23cf7d.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans&amp;display=swap" rel="stylesheet">
-    <link rel="manifest" href="https://caforward.ru/manifest.json">
+    <link rel="stylesheet" href="libs/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/remodal.min.css">
     <link rel="stylesheet" type="text/css" href="css/remodal-default-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -53,7 +44,7 @@
         <section class="navigation-wrapper-container adaptive-grid-container">
             <div class="container-link-img-home-page adaptive-container-link-img-home-page">
                 <a href="https://caforward.ru/" id="logo" rel="home" title="На главную страницу сайта. Форвард: Финансовая Компания" class="link-img-home-page">
-                    <img src="https://caforward.ru/img/logo.png" alt="Форвард: Финансовая Компания">
+                    <img class="lazyload" data-src="https://caforward.ru/img/logo.png" alt="Форвард: Финансовая Компания">
                 </a>
             </div>
             <nav id="nav-header" class="nav-header adaptive-nav-header">
@@ -87,7 +78,7 @@
         <!-- MODAL WINDOWS -->
         <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
             <div class="remodalBorder">
-                <p><img src="https://caforward.ru/img/footer-logo-white.png" alt="Форвард: Финансовая Компания"></p>
+                <p><img class="lazyload" data-src="https://caforward.ru/img/footer-logo-white.png" alt="Форвард: Финансовая Компания"></p>
                 <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
                 <form id="form" method="POST">
                     <h2 id="modal1Title">Оставьте ваши контактные данные и наша служба поддержки свяжется с вами</h2>

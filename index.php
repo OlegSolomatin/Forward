@@ -45,7 +45,7 @@
             </h1>
             <div class="our-service our-service-1">
                 <div class="views-field-field-service-icon">
-                    <img src="https://caforward.ru/img/us.jpg" alt="logo">
+                    <img class="lazyload"  data-src="https://caforward.ru/img/us.jpg" alt="logo">
                 </div>
                 <div class="container-info-text">
                     <h2 class="views-field-title">ПОКУПКА ЗАДОЛЖЕННОСТИ ПО КРЕДИТАМ ФИЗИЧЕСКИХ И ЮРИДИЧЕСКИХ ЛИЦ</h2>
@@ -54,7 +54,7 @@
             </div>
             <div class="our-service our-service-2">
                 <div class="views-field-field-service-icon">
-                    <img src="https://caforward.ru/img/doki.jpg" alt="logo">
+                    <img class="lazyload" data-src="https://caforward.ru/img/doki.jpg" alt="logo">
                 </div>
                 <div class="container-info-text">
                     <h2 class="views-field-title">ВЗЫСКАНИЕ ЗАДОЛЖЕННОСТИ ПО АГЕНТСКОЙ СХЕМЕ</h2>
@@ -63,7 +63,7 @@
             </div>
             <div class="our-service our-service-3">
                 <div class="views-field-field-service-icon">
-                    <img src="https://caforward.ru/img/telefon-min.jpg" alt="logo">
+                    <img class="lazyload" data-src="https://caforward.ru/img/telefon-min.jpg" alt="logo">
                 </div>
                 <div class="container-info-text">
                     <h2 class="views-field-title">ДОСУДЕБНОЕ ВЗЫСКАНИЕ</h2>
@@ -72,7 +72,7 @@
             </div>
             <div class="our-service our-service-4">
                 <div class="views-field-field-service-icon">
-                    <img src="https://caforward.ru/img/sud-min.jpg" alt="logo">
+                    <img class="lazyload" data-src="https://caforward.ru/img/sud-min.jpg" alt="logo">
                 </div>
                 <div class="container-info-text">
                     <h2 class="views-field-title">CУДЕБНОЕ ВЗЫСКАНИЕ</h2>
@@ -87,14 +87,14 @@
             <div class="documents-content">
                 <figure>
                     <a href="https://caforward.ru/documents/svo.pdf" target="_blank">
-                        <img src="https://caforward.ru/img/svo.jpg" alt="Свидетельство о включении в Реестр юридических лиц, осуществляющих деятельность по возврату просроченной задолженности">
+                        <img class="lazyload" data-src="https://caforward.ru/img/svo.jpg" alt="Свидетельство о включении в Реестр юридических лиц, осуществляющих деятельность по возврату просроченной задолженности">
                     </a>
                     <a href="https://caforward.ru/documents/svo.pdf" class="title-docks" target="_blank">Свидетельство о включении в Реестр юридических лиц, осуществляющих деятельность по возврату просроченной задолженности
                     </a>
                 </figure>
                 <figure>
                     <a href="https://caforward.ru/documents/politicks.pdf" target="_blank">
-                        <img src="https://caforward.ru/img/politicks.png" alt="Политика обработки персональных данных">
+                        <img class="lazyload" data-src="https://caforward.ru/img/politicks.png" alt="Политика обработки персональных данных">
                     </a>
                     <a href="https://caforward.ru/documents/politicks.pdf" class="title-docks" target="_blank">Политика обработки персональных данных</a>
                 </figure>
@@ -102,17 +102,17 @@
             <div class="documents-content">
                 <figure>
                     <a href="https://caforward.ru/documents/PPK.pdf" target="_blank">
-                        <img src="https://caforward.ru/img/PPK.png">
+                        <img class="lazyload" data-src="https://caforward.ru/img/PPK.png">
                     </a>
                     <a href="https://caforward.ru/documents/PPK.pdf" class="title-docks" target="_blank">Политика по противодействию коррупции
                     </a>
                 </figure>
-               <!-- <figure>
-                    <a href="documents/politicks.pdf" target="_blank">
-                        <img src="img/politicks.png">
-                    </a>
-                    <a href="documents/svo.pdf" class="title-docks" target="_blank">Политика персональных данных</a>
-                </figure>-->
+                <!-- <figure>
+                     <a href="documents/politicks.pdf" target="_blank">
+                         <img class=lazyload  alt=img"data-src="img/politicks.png">
+                     </a>
+                     <a href="documents/svo.pdf" class="title-docks" target="_blank">Политика персональных данных</a>
+                 </figure>-->
             </div>
         </section>
     </main>
